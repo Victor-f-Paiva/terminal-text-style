@@ -14,25 +14,37 @@ This project aims to help beginners and the broader community easily improve the
 
 ## Installation
 
-Coming soon on PyPI!  
-For now, you can clone the repository and use it locally:
+You can install the package via [PyPI](https://pypi.org/project/terminal-text-style/):
 
 ```bash
-git clone https://github.com/Victor-f-Paiva/terminal-text-style.git
+pip install terminal-text-style
 ```
 
 ## Example
 
 ```python
-from terminal_text_style import style as s
+from terminal_text_style import color_text
 
-print(s.color_text(type='bold', message='Abacaxi com goiaba'))
-print(s.color_text(text='red', message='Abacaxi com goiaba'))
-print(s.color_text(back='yellow', message='Abacaxi com goiaba'))
-print(s.color_text(type='strike', back='green', message='Abacaxi com goiaba'))
-print(s.color_text(type='bold', text='yellow', message='Abacaxi com goiaba'))
-print(s.color_text(back='red', text='white', message='Abacaxi com goiaba'))
-print(s.color_text(text='magenta', type='bold', back='black', message='Abacaxi com goiaba'))
+# message in bold
+print(color_text(type='bold', message='Abacaxi com goiaba'))
+
+# text in red
+print(color_text(text='red', message='Abacaxi com goiaba'))
+
+# yellow background
+print(color_text(back='yellow', message='Abacaxi com goiaba'))
+
+# strike message with green background
+print(color_text(type='strike', back='green', message='Abacaxi com goiaba'))
+
+# bold message with yellow text
+print(color_text(type='bold', text='yellow', message='Abacaxi com goiaba'))
+
+# red background, withe text
+print(color_text(back='red', text='white', message='Abacaxi com goiaba'))
+
+# bold message with magenta color and black background
+print(color_text(text='magenta', type='bold', back='black', message='Abacaxi com goiaba'))
 ```
 
 ## Compatibility
