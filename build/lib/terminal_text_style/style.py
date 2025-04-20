@@ -9,20 +9,6 @@ print(f'Hello, \033[4;33;44m{nome}\033[m!!!')
 '''
 
 def color_text(type=0, text=0, back=0, message=0):
-    """
-color_text(type=0, text=0, back=0, message=0)
-
-Apply ANSI style, color, and background to terminal text.
-
-Parameters:
-- type (str): 'bold', 'italic', 'underline', 'negative', 'strike' or 0 (no style)
-- text (str): text color ('red', 'green', etc.) or 0
-- back (str): background color ('yellow', 'blue', etc.) or 0
-- message (str): the message to be styled
-
-Example:
-print(color_text(type='bold', text='white', back='red', message='Alert!'))
-"""
     styl = {0:0, 'bold' : 1, 'italic' : 3, 'underline' : 4, 'negative': 7, 'strike':9}
     txt = {'black' : 30, 'red' : 31, 'green' : 32, 'yellow' : 33, 'blue' : 34,
     'magenta' : 35, 'cyan' : 36, 'white' : 37}
