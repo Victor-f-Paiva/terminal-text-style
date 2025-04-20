@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='terminal_text_style',
-    version='0.0.1',
+    version='0.0.2',
     description='Style texts in the terminal with colors, backgrounds and styles in an easy way.',
     long_description_content_type= 'text/markdown',
     author='Victor Paiva',
