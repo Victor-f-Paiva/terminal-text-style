@@ -24,15 +24,15 @@ git clone https://github.com/Victor-f-Paiva/terminal-text-style.git
 ## Example
 
 ```python
-from terminal_text_style import color_text
+from terminal_text_style import style as s
 
-print(color_text(type='bold', message='Abacaxi com goiaba'))
-print(color_text(text='red', message='Abacaxi com goiaba'))
-print(color_text(back='yellow', message='Abacaxi com goiaba'))
-print(color_text(type='strike', back='green', message='Abacaxi com goiaba'))
-print(color_text(type='bold', text='yellow', message='Abacaxi com goiaba'))
-print(color_text(back='red', text='white', message='Abacaxi com goiaba'))
-print(color_text(text='magenta', type='bold', back='black', message='Abacaxi com goiaba'))
+print(s.color_text(type='bold', message='Abacaxi com goiaba'))
+print(s.color_text(text='red', message='Abacaxi com goiaba'))
+print(s.color_text(back='yellow', message='Abacaxi com goiaba'))
+print(s.color_text(type='strike', back='green', message='Abacaxi com goiaba'))
+print(s.color_text(type='bold', text='yellow', message='Abacaxi com goiaba'))
+print(s.color_text(back='red', text='white', message='Abacaxi com goiaba'))
+print(s.color_text(text='magenta', type='bold', back='black', message='Abacaxi com goiaba'))
 ```
 
 ## Compatibility
